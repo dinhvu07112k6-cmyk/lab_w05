@@ -3,16 +3,16 @@ Mã sinh viên: 202419021
 Họ tên: Phạm Đình Vũ
 ********************/
 
-namespace lab_w05;
+namespace lab_w05.Models;
 
-public class Projecter : Device
+public class Projector : Device
 {
     // Thuộc Tính
     public int Lumens { get; set; } // Độ sáng
     public int LampHoursUsed { get; set; } // Số giờ sử dụng bóng đèn
 
     // Constructor - khởi tạo
-    public Projecter(string deviceId, string name, int yearOfUse, decimal price, DeviceStatus status,
+    public Projector(string deviceId, string name, int yearOfUse, decimal price, DeviceStatus status,
                      int lumens, int lampHoursUsed)
         : base(deviceId, name, yearOfUse, price, status)
     {
